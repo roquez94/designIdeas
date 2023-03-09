@@ -2,4 +2,58 @@ body {
     height: 100vh;
     width: 100vh;
     background-color: rgb(240, 157, 33);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 80%;
+    width: 60%;
+}
+
+.menu {
+   color: blue;
+   background-color: whitesmoke; 
+}
+
+.dropbtn {
+    background-color: rgb(132, 0, 255);
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: solid;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(2, 68, 68);
+}
+
+.dropDownMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDownLinks {
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 150px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropDownLinks a {
+    color: burlywood;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDownLinks a:hoover {
+    background-color: pink;
+}
+
+/*Using js to add this class for .dropDownLinks when user clicks on drpDownbtn */
+.show {
+    display: block;
 }
