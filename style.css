@@ -65,3 +65,38 @@ right below the dropdown button (using position:absolute). */
 .show {
     display: block;
 }
+
+/*Module using collapsing tab*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border-top: 10px solid blue;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+#main-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-tabs>li {
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    border: 1px solid gray;
+    }
+
+    #extraLI {
+        position: relative;
+        flex: 1;
+    }
+
+    
