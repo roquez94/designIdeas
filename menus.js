@@ -16,5 +16,19 @@ window.onclick = function (e){
             }
         }
     }
-
 }
+
+//3/13/2023 
+//creates collapsing menu (reusable module)
+const dynamicNAVUI = (()=> {
+    const tabs = ['Clothing', 'Shoes', 'Accesories', 'Baby',
+    'Electronics', 'Garden', 'Sports', 'House', 'Bathroom'];
+
+    const mainTab = document.querySelector('#main-tabs');
+
+    window.addEventListener('resize', function (e) {
+        clearNav();
+        fillNav();
+
+    }, true);
+})
