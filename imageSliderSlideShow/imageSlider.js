@@ -1,7 +1,6 @@
 //adds logic to index page for image slider menu
 
 let slideIndex = 1;
-
 showSlides(slideIndex);
 
 // Next/prev controls
@@ -28,9 +27,13 @@ function showSlides (n) {
         dots[i].className = dots[i].className.replace(" active", "");
         }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active"
-}
+    dots[slideIndex-1].className += " active";
+    }
 
-//Automatic image change every 1 seconds
-setTimeout(showSlides(slideIndex +=n), 1000);
+  
+      //Automatic image change every 1 seconds
+      setTimeout(plusSlides, 1000);
+
+
+
 
