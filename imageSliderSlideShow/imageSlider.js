@@ -2,6 +2,7 @@
 
 let slideIndex = 1;
 showSlides(slideIndex);
+    setTimeout(autoSlides, 5000);
 
 // Next/prev controls
 
@@ -32,7 +33,12 @@ function showSlides (n) {
 
   
       //Automatic image change every 5 seconds
-      setTimeout(plusSlides(slideIndex), 5000);
+      function autoSlides() {
+        setTimeout(plusSlides(slideIndex), );
+      };
+
+    
+    
 
 
 
