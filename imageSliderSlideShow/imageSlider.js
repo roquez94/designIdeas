@@ -31,8 +31,8 @@ function showSlides (n) {
     }
 
   
-      //Automatic image change every 1 seconds
-      setTimeout(plusSlides, 2000);
+      //Automatic image change every 5 seconds
+      setTimeout(plusSlides(slideIndex), 5000);
 
 
 
