@@ -1,8 +1,8 @@
 //adds logic to index page for image slider menu
 
+//(3/20/23) Will replace with autoSlider.js module
 let slideIndex = 1;
 showSlides(slideIndex);
-    setTimeout(autoSlides, 5000);
 
 // Next/prev controls
 
@@ -12,6 +12,7 @@ function plusSlides(n) {
 
 //Thumbnail image controls
 function currentSlide(n) {
+    //was slideIndex = n
     showSlides(slideIndex = n);
 }
 
@@ -29,13 +30,9 @@ function showSlides (n) {
         }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
+
     }
 
-  
-      //Automatic image change every 5 seconds
-      function autoSlides() {
-        setTimeout(plusSlides(slideIndex), );
-      };
 
     
     
