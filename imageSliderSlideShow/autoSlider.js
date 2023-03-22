@@ -24,7 +24,14 @@
 
         for (let i=0; i<slides.length; i++){
             slides[i].style.display = "none";
-            dots[i].className 
+            dots[i].className = dots[i].className.replace(" active", "");
         }
 
+        slides[index].style.display = "block";
+        dots[index].className += " active";
+
+        index ++;
+        setTimeout(changeSlide, 5000)
       }
+
+      changeSlide()
